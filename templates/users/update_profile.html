@@ -10,7 +10,7 @@
 
     <div class="row justify-content-md-center">
         <div class="col-6 p-4" id="profile-box">
-          <form method="POST" action="{% url "update_profile" %}" enctype="multipart/form-data">
+          <form method="POST" action="{% url "users:update_profile" %}" enctype="multipart/form-data">
             {% csrf_token %}
 
             <div class="media">
